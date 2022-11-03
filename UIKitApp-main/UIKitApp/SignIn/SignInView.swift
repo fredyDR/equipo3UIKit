@@ -9,8 +9,8 @@ import SwiftUI
 
 struct SignInView: View {
     
-    @State private var email: String = ""
-    @State private var password: String = ""
+    @State private var email: String = "email@.com"
+    @State private var password: String = "12345678"
     
     var body: some View {
         VStack(spacing: SignInConstants.bodySpacing) {
@@ -26,8 +26,19 @@ struct SignInView: View {
             }
             
             VStack(spacing: SignInConstants.textFieldSpacing) {
-                TextField(LocalizableKeys.SignIn.emailPlaceholder, text: $email)
+                TextField(LocalizableKeys.SignIn.emailPlaceholder, text: $email, onEditingChanged: {
+                    (changed) in
+                    if changed {
+                        print(Text(email))
+                    } else {
+                        if email != "", password != "" {
+                            
+                        }
+                    }
+                })
                     .textFieldStyle(SignInTextFieldStyle())
+                    
+                    
                 
                 SecureField(LocalizableKeys.SignIn.passwordPlaceholder, text: $password)
                     .textFieldStyle(SignInTextFieldStyle())
@@ -36,7 +47,10 @@ struct SignInView: View {
             Spacer()
             
             VStack(spacing: SignInConstants.buttonSpacing) {
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                Button(action: {
+                    
+                    
+                }) {
                     Text(LocalizableKeys.SignIn.signInButtonTitle)
                 }
                 .buttonStyle(SignInButtonStyle())
