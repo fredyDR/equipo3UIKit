@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController restorationIdentifier="a" storyboardIdentifier="a" id="Y6W-OH-hqX" customClass="MainViewController" customModule="UIKitApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pantalla 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdq-zn-uQc">
+                                <rect key="frame" x="146.5" y="430" width="121.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mdq-zn-uQc" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="cch-HD-15Y"/>
+                            <constraint firstItem="mdq-zn-uQc" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="sqk-dt-cap"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="creditcard" catalog="system" id="wFc-nD-Lq4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="135.9375"/>
+        </scene>
+        <!--Welcome Two View Controller-->
+        <scene sceneID="emB-6o-RPU">
+            <objects>
+                <viewController restorationIdentifier="b" storyboardIdentifier="b" id="mZW-Kr-ccS" customClass="WelcomeTwoViewController" customModule="UIKitApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bnf-GP-Uxm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sPc-s3-6r0">
+                                <rect key="frame" x="52" y="179" width="310.5" height="538"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0K-pW-RKz">
+                                        <rect key="frame" x="85.5" y="251.5" width="139" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKS-nw-xBJ" customClass="PrimaryButton" customModule="UIKitApp" customModuleProvider="target">
+                                        <rect key="frame" x="77.5" y="497" width="155" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Cerrar"/>
+                                        <connections>
+                                            <action selector="closed:" destination="mZW-Kr-ccS" eventType="touchUpInside" id="HPK-qr-dbe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="EKS-nw-xBJ" firstAttribute="centerX" secondItem="sPc-s3-6r0" secondAttribute="centerX" id="0hA-ZB-jr4"/>
+                                    <constraint firstItem="y0K-pW-RKz" firstAttribute="centerY" secondItem="sPc-s3-6r0" secondAttribute="centerY" id="5bK-sF-byc"/>
+                                    <constraint firstAttribute="bottom" secondItem="EKS-nw-xBJ" secondAttribute="bottom" constant="10" id="CBH-k4-gqr"/>
+                                    <constraint firstItem="EKS-nw-xBJ" firstAttribute="width" secondItem="sPc-s3-6r0" secondAttribute="width" multiplier="0.5" id="DS4-2U-TR0"/>
+                                    <constraint firstItem="y0K-pW-RKz" firstAttribute="centerX" secondItem="sPc-s3-6r0" secondAttribute="centerX" id="mi3-5P-I8o"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lGz-9B-6f9"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sPc-s3-6r0" firstAttribute="centerX" secondItem="Bnf-GP-Uxm" secondAttribute="centerX" id="14Q-Rc-lEm"/>
+                            <constraint firstItem="sPc-s3-6r0" firstAttribute="height" secondItem="Bnf-GP-Uxm" secondAttribute="height" multiplier="0.6" id="KU0-yU-0jj"/>
+                            <constraint firstItem="sPc-s3-6r0" firstAttribute="width" secondItem="Bnf-GP-Uxm" secondAttribute="width" multiplier="0.75" id="cTg-im-2Px"/>
+                            <constraint firstItem="sPc-s3-6r0" firstAttribute="centerY" secondItem="Bnf-GP-Uxm" secondAttribute="centerY" id="fMH-qE-yu1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0sH-IJ-WcG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1891" y="136"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aJR-64-c2X">
+            <objects>
+                <viewController id="ncW-Ea-G4A" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N9P-WV-5JF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pantalla 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlW-vu-C7N">
+                                <rect key="frame" x="144.5" y="430" width="125.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oY2-IL-Wy4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jlW-vu-C7N" firstAttribute="centerX" secondItem="N9P-WV-5JF" secondAttribute="centerX" id="aS7-QT-ZmM"/>
+                            <constraint firstItem="jlW-vu-C7N" firstAttribute="centerY" secondItem="N9P-WV-5JF" secondAttribute="centerY" id="ig1-BZ-dKK"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="pencil" catalog="system" id="1vv-ft-F6A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G0K-2h-QUp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="868"/>
+        </scene>
+        <!--Dash View Controller-->
+        <scene sceneID="H6w-Ow-mQ9">
+            <objects>
+                <tabBarController restorationIdentifier="c" storyboardIdentifier="c" automaticallyAdjustsScrollViewInsets="NO" id="MlF-2P-QSm" customClass="DashViewController" customModule="UIKitApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vVo-eh-pcH">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="viewControllers" id="8Gr-oF-vEI"/>
+                        <segue destination="ncW-Ea-G4A" kind="relationship" relationship="viewControllers" id="uqY-no-4Gp"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tBb-Eb-fpL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="creditcard" catalog="system" width="128" height="88"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
