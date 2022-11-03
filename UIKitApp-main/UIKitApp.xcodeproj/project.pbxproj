@@ -28,6 +28,10 @@
 		1CAE3B5228D37F0D008E10A3 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAE3B5128D37F0D008E10A3 /* CustomColor.swift */; };
 		1CAE3B5428D37F25008E10A3 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAE3B5328D37F25008E10A3 /* PrimaryButton.swift */; };
 		1CAE3B5628D37F43008E10A3 /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAE3B5528D37F43008E10A3 /* PrimaryTextField.swift */; };
+		1DECE5C9291478D600B8DE69 /* MainDashView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DECE5C8291478D600B8DE69 /* MainDashView.storyboard */; };
+		1DECE5CB29147B1200B8DE69 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DECE5CA29147B1200B8DE69 /* MainViewController.swift */; };
+		1DECE5CD29147E4C00B8DE69 /* WelcomeTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DECE5CC29147E4C00B8DE69 /* WelcomeTwoViewController.swift */; };
+		1DECE5CF291484AB00B8DE69 /* DashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DECE5CE291484AB00B8DE69 /* DashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,10 @@
 		1CAE3B5128D37F0D008E10A3 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 		1CAE3B5328D37F25008E10A3 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		1CAE3B5528D37F43008E10A3 /* PrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
+		1DECE5C8291478D600B8DE69 /* MainDashView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainDashView.storyboard; sourceTree = "<group>"; };
+		1DECE5CA29147B1200B8DE69 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1DECE5CC29147E4C00B8DE69 /* WelcomeTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeTwoViewController.swift; sourceTree = "<group>"; };
+		1DECE5CE291484AB00B8DE69 /* DashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +133,7 @@
 			children = (
 				1CAE369D28D2672C008E10A3 /* AppDelegate.swift */,
 				1CAE369F28D2672C008E10A3 /* SceneDelegate.swift */,
+				1DECE5C62914780B00B8DE69 /* MainDash */,
 				1CAE36E528D370B1008E10A3 /* Resources */,
 				1CAE36DC28D36F80008E10A3 /* SignIn */,
 				1CAE36D528D2F5F4008E10A3 /* SignUp */,
@@ -209,6 +218,25 @@
 				1CAE36E828D371BC008E10A3 /* LocalizableKeys.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1DECE5C62914780B00B8DE69 /* MainDash */ = {
+			isa = PBXGroup;
+			children = (
+				1DECE5C7291478A000B8DE69 /* Controller */,
+				1DECE5C8291478D600B8DE69 /* MainDashView.storyboard */,
+			);
+			path = MainDash;
+			sourceTree = "<group>";
+		};
+		1DECE5C7291478A000B8DE69 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1DECE5CA29147B1200B8DE69 /* MainViewController.swift */,
+				1DECE5CC29147E4C00B8DE69 /* WelcomeTwoViewController.swift */,
+				1DECE5CE291484AB00B8DE69 /* DashViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CAE36E728D37190008E10A3 /* Localizable.strings in Resources */,
+				1DECE5C9291478D600B8DE69 /* MainDashView.storyboard in Resources */,
 				1CAE36AA28D26732008E10A3 /* LaunchScreen.storyboard in Resources */,
 				1CAE36A728D26732008E10A3 /* Assets.xcassets in Resources */,
 				1CAE36DB28D2F6C2008E10A3 /* SignUp.storyboard in Resources */,
@@ -343,7 +372,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DECE5CF291484AB00B8DE69 /* DashViewController.swift in Sources */,
 				1CAE3B5628D37F43008E10A3 /* PrimaryTextField.swift in Sources */,
+				1DECE5CD29147E4C00B8DE69 /* WelcomeTwoViewController.swift in Sources */,
 				1CAE36DF28D36FE6008E10A3 /* SignInView.swift in Sources */,
 				1CAE36E128D3700D008E10A3 /* SignInConstants.swift in Sources */,
 				1CAE3B5228D37F0D008E10A3 /* CustomColor.swift in Sources */,
@@ -352,6 +383,7 @@
 				1CAE3B5428D37F25008E10A3 /* PrimaryButton.swift in Sources */,
 				1CAE36E328D3703A008E10A3 /* SignInStyles.swift in Sources */,
 				1CAE36E928D371BC008E10A3 /* LocalizableKeys.swift in Sources */,
+				1DECE5CB29147B1200B8DE69 /* MainViewController.swift in Sources */,
 				1CAE36CF28D2F56C008E10A3 /* WelcomeViewController.swift in Sources */,
 				1CAE369E28D2672C008E10A3 /* AppDelegate.swift in Sources */,
 				1CAE36D728D2F60B008E10A3 /* Constants.swift in Sources */,
@@ -529,7 +561,7 @@
 				INFOPLIST_FILE = UIKitApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = SignUp;
+				INFOPLIST_KEY_UIMainStoryboardFile = MainDashView;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -556,7 +588,7 @@
 				INFOPLIST_FILE = UIKitApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = SignUp;
+				INFOPLIST_KEY_UIMainStoryboardFile = MainDashView;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
